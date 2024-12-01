@@ -1,8 +1,29 @@
-# React + Vite
+---
+title: "Interactive To-Do List"
+output: html_document
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Interactive To-Do List
 
-Currently, two official plugins are available:
+This is a dynamic and interactive to-do list application designed to help users manage their tasks efficiently. The project demonstrates a variety of technical and design skills, including:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Frontend Development**: Built with React, utilizing modern hooks like `useState` and `useEffect` for state and lifecycle management.  
+- **User Interactivity**: Features include adding, editing, and deleting tasks with real-time UI updates.  
+- **Responsive Design**: Optimized for desktop and mobile devices using flexible layouts and CSS styling.  
+- **State Management**: Efficiently manages task data using React's state and props for seamless updates.  
+- **Custom Features**: Includes task priority indicators, due date tracking, and smooth animations for better user experience.  
+- **Backend Integration (Optional)**: Supports saving tasks persistently via API or local storage.  
+- **Accessibility**: Designed with accessibility in mind, supporting keyboard navigation and screen readers.  
+
+## Summary
+
+This project serves as a comprehensive demonstration of modern web development practices, showcasing skills in:
+
+- JavaScript
+- React
+- UI/UX Design
+- Code Organization
+
+Feel free to explore the codebase and see how the application was structured! 🚀
