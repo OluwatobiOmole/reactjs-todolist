@@ -1,7 +1,4 @@
----
-title: "Interactive To-Do List"
-output: html_document
----
+
 
 # Interactive To-Do List
 
