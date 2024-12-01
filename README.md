@@ -10,9 +10,7 @@ This is a dynamic and interactive to-do list application designed to help users 
 - **User Interactivity**: Features include adding, editing, and deleting tasks with real-time UI updates.  
 - **Responsive Design**: Optimized for desktop and mobile devices using flexible layouts and CSS styling.  
 - **State Management**: Efficiently manages task data using React's state and props for seamless updates.  
-- **Custom Features**: Includes task priority indicators, due date tracking, and smooth animations for better user experience.  
-- **Backend Integration (Optional)**: Supports saving tasks persistently via API or local storage.  
-- **Accessibility**: Designed with accessibility in mind, supporting keyboard navigation and screen readers.  
+
 
 ## Summary
 
