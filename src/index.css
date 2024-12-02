@@ -75,6 +75,15 @@ p {
   padding-top: 20px; /* Adjust the value as needed */
 }
 
+h2 {
+  text-align: center; /* Centers the text horizontally */
+  padding: 20px; /* Adds padding inside the element */
+}
+
+h3 {
+  text-align: center; /* Centers the text horizontally */
+  padding: 20px; /* Adds padding inside the element */
+}
 
 .todoItem {
   display: flex;
@@ -83,10 +92,12 @@ p {
   padding: 14px;
   border-radius: 14px;
   background: white;
+  font-family: 'Press Start 2P', system-ui;
 }
 
 .todoItem p {
   flex: 1;
+  font-family: 'Press Start 2P', system-ui;
 }
 
 .actionsContainer {

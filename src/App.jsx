@@ -1,15 +1,20 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
+import TitleComponent from "./components/TitleComponent"
 
 
 function App() {
   const [todos, setTodos] = useState([])
   const [todoValue, setTodoValue] = useState('')
 
+  function persistData(newList) {
+    localStorage.setItem('todos', JSON.stringify({ todos: newList }))
+  }
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo]
+    persistData(newTodoList)
     setTodos(newTodoList)
   }
 
@@ -17,6 +22,7 @@ function App() {
     const newToDoList = todos.filter ( (todo, todoIndex) => {
       return todoIndex != index
     })
+    persistData(newTodoList)
     setTodos (newToDoList)
   }
   
@@ -26,9 +32,26 @@ function App() {
     handleDeleteTodo(index)
 
   }
+
+  useEffect(() => {
+    if (!localStorage) {
+      return
+    }
+
+    let localTodos = localStorage.getItem('todos')
+    if (!localTodos) {
+      return
+    }
+
+    console.log(localTodos)
+    localTodos = JSON.parse(localTodos).todos
+    setTodos(localTodos)
+
+  }, [])
   
   return (
     <>
+      <TitleComponent />
       <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos= {handleAddTodos} />
       <TodoList handleEditTodo = {handleEditTodo} handleDeleteTodo = {handleDeleteTodo} todos = {todos} />
     </>
